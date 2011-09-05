@@ -1,0 +1,147 @@
+body {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  color: white;
+}
+
+#container {
+  position: relative;
+}
+
+#header {
+  height: 110px;
+}
+#header h1 {
+  position: absolute;
+  top: 25px;
+  left: 50px;
+}
+#header ul.actions {
+  position: absolute;
+  right: 50px;
+  top: 0px;
+  font-size: 12px;
+  background-color: #373737;
+  padding: 10px;
+}
+#header ul.actions li {
+  display: inline;
+}
+#header ul.actions li.signup {
+  color: orange;
+}
+#header ul.nav {
+  text-transform: uppercase;
+  position: absolute;
+  top: 75px;
+  left: 450px;
+}
+#header ul.nav li {
+  float: left;
+  margin-right: 15px;
+}
+#header ul.nav li.demo {
+  background-color: orange;
+  color: white;
+  padding: 5px;
+  position: relative;
+  top: -5px;
+}
+
+.about {
+  background-color: purple;
+  height: 200px;
+  padding-top: 10px;
+  position: relative;
+  font-size: 18px;
+}
+.about .copy {
+  position: absolute;
+  line-height: 28px;
+  left: 450px;
+}
+.about .copy span {
+  font-size: 22px;
+}
+.about .copy .highlight {
+  color: orange;
+}
+.about .copy span {
+  display: block;
+}
+
+.how-it-works {
+  padding-left: 50px;
+  height: 250px;
+  background-color: white;
+  color: black;
+}
+.how-it-works h2 {
+  font-size: 30px;
+}
+.how-it-works ol {
+  height: 200px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  width: 600px;
+}
+.how-it-works ol li {
+  margin-right: 20px;
+  width: 130px;
+  float: left;
+}
+.how-it-works ol li ul li {
+  height: auto;
+  width: auto;
+}
+
+.seeing-results {
+  padding-left: 50px;
+  height: 250px;
+  background-color: white;
+  color: black;
+  position: relative;
+}
+.seeing-results p {
+  position: absolute;
+  width: 100px;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+.seeing-results ul {
+  position: absolute;
+  left: 250px;
+  top: 45px;
+}
+.seeing-results ul li {
+  text-transform: uppercase;
+  float: left;
+  margin-right: 30px;
+  font-size: 24px;
+}
+
+#footer {
+  height: 100px;
+  text-align: center;
+}
+#footer .examples {
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  border-right: 1px solid gray;
+}
+#footer .newsletter {
+  height: 100px;
+  position: absolute;
+  left: 210px;
+  width: 400px;
+}
+#footer .connect {
+  height: 100px;
+  position: absolute;
+  left: 710px;
+  width: 200px;
+  border-left: 1px solid gray;
+}
