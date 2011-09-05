@@ -1,1 +1,1 @@
-web: serve 0.0.00:$PORT
+web: serve 0.0.0.0:$PORT
