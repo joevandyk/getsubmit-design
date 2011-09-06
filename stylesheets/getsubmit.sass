@@ -1,10 +1,18 @@
 
+$orange: rgb(250, 104, 8)
+$purple: rgb(90, 10, 90)
+
 body
+  font-family: arial
   width: 960px
   margin-left: auto
   margin-right: auto
   background-color: black
   color: white
+
+.nav-link-highlight
+  background-color: rgb(250, 104, 8)
+  border-radius: 5px
 
 #container
   position: relative
@@ -19,32 +27,71 @@ body
   ul.actions
     position: absolute
     right: 50px
-    top: 0px
+    top: -10px
     font-size: 12px
     background-color: #373737
     padding: 10px
-    li
-      display: inline
+    padding-top: 20px
+    border-radius: 10px
+    a
+      color: white
+      text-decoration: none
+      text-transform: uppercase
+      font-size: 10px
+      &:hover
+        color: $orange
       &.signup
-        color: orange
+        color: $orange
+        &:hover
+          color: white
+    li
+      &:first-child
+        padding-right: 10px
+      display: inline
 
   ul.nav
     text-transform: uppercase
     position: absolute
     top: 75px
-    left: 450px
+    left: 430px
     li
       float: left
-      margin-right: 15px
-      &.demo
-        background-color: orange
+      &:hover
+        a
+          @extend .nav-link-highlight
+      a
+        padding: 8px
+        margin-right: 10px
         color: white
-        padding: 5px
-        position: relative
-        top: -5px
+        text-decoration: none
+        &.demo
+          @extend .nav-link-highlight
+          &:hover
+            background-color: black
+      .menu
+        display: none
+
+      &:hover
+        .menu
+          position: absolute
+          border: 1px $orange solid
+          display: block
+          z-index: 1
+          padding: 10px
+          background-color: black
+          color: white
+          li
+            padding: 5px 4px
+            float: none
+            a
+              background-color: transparent
+              &:hover
+                background-color: transparent
+                color: $orange
+
 
 .about
-  background-color: purple
+  background-color: $purple
   height: 200px
   padding-top: 10px
   position: relative
@@ -54,7 +101,7 @@ body
     line-height: 28px
     span
       font-size: 22px
-    left: 450px
+    left: 430px
     .highlight
       color: orange
     span
@@ -65,9 +112,14 @@ body
   height: 250px
   background-color: white
   color: black
+  font-size: 12px
   h2
     font-size: 30px
+  h3
+    font-size: 20px
+    margin-bottom: 5px
   ol
+    padding-top: 10px
     height: 200px
     border-top: 1px solid gray
     border-bottom: 1px solid gray

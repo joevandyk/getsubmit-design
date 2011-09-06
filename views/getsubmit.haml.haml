@@ -9,16 +9,42 @@
         %h1 getsubmit
 
         %ul.actions
-          %li Login
-          %li.signup Signup
+          %li= link_to "Login", "#"
+          %li= link_to "Signup", "#", :class => 'signup'
 
         %ul.nav
-          %li Home
-          %li Product
-          %li Customers
-          %li News
-          %li FAQ
-          %li.demo Demo
+          %li
+            = link_to "Home", ''
+            .menu
+              %ul
+                %li= link_to "Home Menu 1", "#"
+                %li= link_to "Home Menu 2", "#"
+                %li= link_to "Home Menu 3", "#"
+
+          %li
+            = link_to "Product", ''
+            .menu
+              %ul
+                %li= link_to "Product Menu 1", "#"
+                %li= link_to "Product Menu 2", "#"
+                %li= link_to "Product Menu 3", "#"
+
+          %li
+            = link_to "Customers", ''
+            .menu
+              %ul
+                %li= link_to "Customers Menu 1", "#"
+                %li= link_to "Customers Menu 2", "#"
+                %li= link_to "Customers Menu 3", "#"
+          %li
+            = link_to "News", ''
+            .menu
+              %ul
+                %li= link_to "News Menu 1", "#"
+                %li= link_to "News Menu 2", "#"
+                %li= link_to "News Menu 3", "#"
+          %li= link_to "FAQ", ''
+          %li= link_to "Demo", '', :class => 'demo'
 
       .about
         .copy
