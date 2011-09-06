@@ -21,6 +21,7 @@ body {
 }
 #header h1 {
   position: absolute;
+  font-size: 40px;
   top: 25px;
   left: 50px;
 }
